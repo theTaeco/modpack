@@ -1385,8 +1385,8 @@ hash = "a0fb6a028f0c5b75ca2cc625cf81eec3e84ea856762df2561d2dbcb28c65289a"
 metafile = true
 
 [[files]]
-file = "mods/phonos-1.1.1-beta.1+1.20.1.jar"
-hash = "d50c8534d582bff02181f3a8f5f7300cbd33d0bc418c4f6905557b0d8a66d9fa"
+file = "mods/phonos-1.1.1-beta.2+1.20.1.jar"
+hash = "6738298213d1de963167ca433f622e3e027f30ef3f49cdd6e471823e7717a4a2"
 
 [[files]]
 file = "mods/picturesign-2.0.0-beta.1+unascribedtheora-patch.5.jar"
