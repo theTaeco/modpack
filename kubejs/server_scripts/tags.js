@@ -40,10 +40,10 @@ let bottomless_allow = [
 
 ServerEvents.tags("block", (event) => {
     better_end_chests.forEach((id) => {
-        event.add("lootr:convert_chests", id);
+        event.add("lootr:convert/chests", id);
     })
     better_end_barrels.forEach((id) => {
-        event.add("lootr:convert_barrels", id);
+        event.add("lootr:convert/barrels", id);
     })
 
     non_movable.forEach((id) => {
