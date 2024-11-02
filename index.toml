@@ -185,6 +185,11 @@ file = "config/paxi/resourcepacks/RailwaysTweaks/pack.mcmeta"
 hash = "04d90cd6c0c7eda18aee76107ac78f8246388deb4c7a01810af3cd757d67dfd0"
 
 [[files]]
+file = "config/paxi/resourcepacks/ae2-texture-backport.pw.toml"
+hash = "9fd61644e8ed178e67b0d0d6e1c5b7c07d96721166417fb199daa127712d7501"
+metafile = true
+
+[[files]]
 file = "config/paxi/resourcepacks/colorful-nixies.pw.toml"
 hash = "4c0fdefa84f8414640efc4c455e997f06d15cc1c706aa9f7db8504101276f35a"
 metafile = true
@@ -236,11 +241,6 @@ hash = "0fea1606bf1a09629dd76f7d292a1b474661579c8a1a53041d2282c9fbb74ace"
 [[files]]
 file = "config/paxi/resourcepacks/panorama/pack.mcmeta"
 hash = "4e51ed637821719baa8585123d511837a229137046bf5a598e8b9b6ff6703f77"
-
-[[files]]
-file = "config/paxi/resourcepacks/refreshed-energistics.pw.toml"
-hash = "70c94a79af4f4588a5db385bdc49a36c5559b8b194f360cafa651d8dcbe802b0"
-metafile = true
 
 [[files]]
 file = "config/picturesign.json"
@@ -1754,11 +1754,6 @@ metafile = true
 [[files]]
 file = "mods/yungs-better-witch-huts.pw.toml"
 hash = "f683e330873db2c19856790cf2b4b226eecbb44d42c4700b32caab671b2c21f4"
-metafile = true
-
-[[files]]
-file = "resourcepacks/ae2-texture-backport.pw.toml"
-hash = "9fd61644e8ed178e67b0d0d6e1c5b7c07d96721166417fb199daa127712d7501"
 metafile = true
 
 [[files]]
