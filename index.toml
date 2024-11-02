@@ -719,11 +719,6 @@ hash = "6b4e4ced7cb3323842a46fa78fe1e5e8ff2badd6814d09dab5ea9e5ca0f28a7c"
 metafile = true
 
 [[files]]
-file = "mods/create-dynamic-lights.pw.toml"
-hash = "236dcb0e37036f124ecd51369b1ad1fc75235665c061103189da9999dbd1a0d5"
-metafile = true
-
-[[files]]
 file = "mods/create-enchantment-industry-fabric.pw.toml"
 hash = "da0b1e65c3bb9f9eabfbaf4242b3adf22267752adb3824fe62b24077cf458340"
 metafile = true
@@ -816,11 +811,6 @@ metafile = true
 [[files]]
 file = "mods/ecospherical-expansion.pw.toml"
 hash = "1928538e6b06326b0fe807404da78100d1d6f74634ba1cc7ec39418311155693"
-metafile = true
-
-[[files]]
-file = "mods/elegantarmour.pw.toml"
-hash = "afb14b32290f71125e251c560386191a0eca5d2daf1860d7efcb6e7b9b707779"
 metafile = true
 
 [[files]]
@@ -1091,11 +1081,6 @@ metafile = true
 [[files]]
 file = "mods/kubejs.pw.toml"
 hash = "08466e36ec0585de1c99f28e5f91566160e06283e5d69ad47c74623f72ce9385"
-metafile = true
-
-[[files]]
-file = "mods/lambdynamiclights.pw.toml"
-hash = "a626674fc1092afe5ccc6cbf4856c09119e42395494f1c3862eed2ab17da0221"
 metafile = true
 
 [[files]]
