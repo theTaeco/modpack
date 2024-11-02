@@ -9,7 +9,7 @@ let non_movable = [
 
 let bottomless_allow = [
     "create:honey",
-    "minecraft:milk"
+    "milk:milk_fluid_block"
 ]
 
 ServerEvents.tags("block", (event) => {

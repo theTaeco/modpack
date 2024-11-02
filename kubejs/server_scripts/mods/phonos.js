@@ -1,6 +1,7 @@
 // ServerEvents.tags("item", (event) => {
 //   event.tags.put();
 // });
+//Dummy commit
 
 ServerEvents.recipes((event) => {
     event.shaped("phonos:electronic_note_block", ["E", "N", "P"], {
@@ -24,7 +25,33 @@ ServerEvents.recipes((event) => {
         S: "#createaddition:spools",
         N: "create:copper_nugget",
     });
+
+    event.shaped(
+        'kubejs:antenna',
+        [
+            'BIB',
+            ' I ',
+            ' I '
+        ],
+        {
+            B: 'minecraft:iron_bars',
+            I: 'createaddition:iron_rod'
+        }
+    );
     
+    event.shaped(
+        'kubejs:satellite_dish',
+        [
+            'S S',
+            ' S ',
+            ' I '
+        ],
+        {
+            S: 'create:iron_sheet',
+            I: 'createaddition:iron_rod'
+        }
+    );
+
     event.shaped(
         'phonos:connection_hub',
         [
@@ -41,12 +68,12 @@ ServerEvents.recipes((event) => {
     event.shaped(
         'phonos:radio_transceiver',
         [
+            ' A ',
             ' I ',
-            ' T ',
             'EBE'
         ],
         {
-            I: 'minecraft:iron_bars',
+            A: 'kubejs:antenna',
             T: 'minecraft:redstone_torch',
             E: 'create:electron_tube',
             B: 'create:brass_casing'
@@ -82,12 +109,11 @@ ServerEvents.recipes((event) => {
     event.shaped(
     	'phonos:satellite_receiver',
         [
-            'I I',
-            ' I ',
+            ' D ',
             'EBE'
         ],
         {
-            I: 'create:iron_sheet',
+            D: 'kubejs:dish_antenna',
             E: 'create:electron_tube',
             B: 'create:brass_casing'
         }
@@ -174,9 +200,6 @@ ServerEvents.recipes((event) => {
             I: 'createaddition:iron_rod'
         }
     );
-    
-    
-
     for (let index in Color.DYE) {
         /** @type {Internal.DyeColor} */
         let color = Color.DYE[index];
