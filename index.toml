@@ -1711,6 +1711,11 @@ hash = "f683e330873db2c19856790cf2b4b226eecbb44d42c4700b32caab671b2c21f4"
 metafile = true
 
 [[files]]
+file = "resourcepacks/ae2-texture-backport.pw.toml"
+hash = "9fd61644e8ed178e67b0d0d6e1c5b7c07d96721166417fb199daa127712d7501"
+metafile = true
+
+[[files]]
 file = "resourcepacks/animatronic-conductor.pw.toml"
 hash = "333b182c5454f16ffeed1f0ee9fb1c6b5d1f2b9dd0754c4f89d9870230059048"
 metafile = true
