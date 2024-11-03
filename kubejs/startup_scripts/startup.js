@@ -9,8 +9,6 @@ StartupEvents.registry('item', e => {
     .glow(true)
     .useAnimation('crossbow')
     .useDuration(_itemstack => 72000)
-    .barColor(_itemstack => Color.DARK_PURPLE)
-    .barWidth(_itemstack => 0)
     .use((_level, player, _hand) => {
       player.playSound("minecraft:block.respawn_anchor.charge", 5, 0);
       return true;
@@ -69,15 +67,22 @@ StartupEvents.registry('item', e => {
     .rarity("uncommon")
     .glow(true)
     .maxDamage(4)
+    .barColor(_itemstack => Color.LIGHT_PURPLE)
+    .barWidth(_itemstack => 13)
     .tooltip("A runic shard, formatted for transport spells.")
     .use((_level, player, _hand) => {
       var itemstack = player.mainHandItem;
       var command = player.mainHandItem.nbt;
       player.tell(command);
       itemstack.damageValue++;
+      itemstack.barWidth = Math.ceil(13 - Math.ceil(3.25*damageValue));
+      if (itemstack.damageValue > 0){
+        itemstack.barVisible = true;
+      }
       if (itemstack.damageValue >= itemstack.maxDamage) {
         itemstack.count = itemstack.count - 1;
       }
+      itemstack.
       return true;
     })
 
