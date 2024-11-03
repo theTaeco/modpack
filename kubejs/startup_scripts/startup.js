@@ -78,6 +78,7 @@ StartupEvents.registry('item', e => {
       if (itemstack.damageValue >= itemstack.maxDamage) {
         itemstack.count = itemstack.count - 1;
       }
+      return true;
     })
 
     e.create('antenna').displayName('Antenna').texture('phonos:item/antenna');
