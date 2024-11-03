@@ -75,7 +75,7 @@ StartupEvents.registry('item', e => {
       var command = player.mainHandItem.nbt;
       player.tell(command);
       itemstack.damageValue++;
-      itemstack.barWidth = Math.ceil(13 - Math.ceil(3.25*damageValue));
+      itemstack.barWidth = Math.ceil(13 - Math.ceil(3.25*itemstack.damageValue));
       if (itemstack.damageValue > 0){
         itemstack.barVisible = true;
       }
