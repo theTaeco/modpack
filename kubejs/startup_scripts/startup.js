@@ -82,7 +82,6 @@ StartupEvents.registry('item', e => {
       if (itemstack.damageValue >= itemstack.maxDamage) {
         itemstack.count = itemstack.count - 1;
       }
-      itemstack.
       return true;
     })
 
