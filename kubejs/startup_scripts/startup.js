@@ -74,7 +74,6 @@ StartupEvents.registry('item', e => {
       var itemstack = player.mainHandItem;
       var command = player.mainHandItem.nbt;
       player.tell(command);
-      player.runCommandSilent("kubejs custom_command " +command);
       itemstack.damageValue++;
       if (itemstack.damageValue >= itemstack.maxDamage) {
         itemstack.count = itemstack.count - 1;
