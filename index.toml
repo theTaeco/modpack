@@ -367,67 +367,67 @@ file = "kubejs/assets/relics/textures/model/voidgazer_spyglass_model.png"
 hash = "bd24fa7297357125e80095e3e0b5093a1512599db197cc542745c93230425cfe"
 
 [[files]]
-file = "kubejs/assets/runic_crystals/textures/item/combat_gold.png"
+file = "kubejs/assets/runic_shards/textures/item/combat_gold.png"
 hash = "01e728290bda410e6ead6b6d8ec8aedb7ade02b81ccd5e8130e48e557da4c4bc"
 
 [[files]]
-file = "kubejs/assets/runic_crystals/textures/item/combat_inert.png"
+file = "kubejs/assets/runic_shards/textures/item/combat_inert.png"
 hash = "63d83b15145f566b2d356afdf635c56c436af8096eaaaf3385fc40a0dc6f3380"
 
 [[files]]
-file = "kubejs/assets/runic_crystals/textures/item/combat_iron.png"
+file = "kubejs/assets/runic_shards/textures/item/combat_iron.png"
 hash = "fa7b8e360e2eefdcb2d9b57439d159ecd200de0239a44326574e1de8e5157c50"
 
 [[files]]
-file = "kubejs/assets/runic_crystals/textures/item/combat_netherite.png"
+file = "kubejs/assets/runic_shards/textures/item/combat_netherite.png"
 hash = "26ee51e76bf3fdb7cc211a0a3981eb916dfbad9a0cacd63bc580d662c2315800"
 
 [[files]]
-file = "kubejs/assets/runic_crystals/textures/item/conjuring_gold.png"
+file = "kubejs/assets/runic_shards/textures/item/conjuring_gold.png"
 hash = "8d573c4c2b180a4fbcf9dec8e0449f334adeaf2c6cc22ead5061caf6515a25ca"
 
 [[files]]
-file = "kubejs/assets/runic_crystals/textures/item/conjuring_inert.png"
+file = "kubejs/assets/runic_shards/textures/item/conjuring_inert.png"
 hash = "b2af95c372fed063c2d12f0ee3dbb2e545ccd3bf7a468b84e6fd6b77cdddf2d1"
 
 [[files]]
-file = "kubejs/assets/runic_crystals/textures/item/conjuring_iron.png"
+file = "kubejs/assets/runic_shards/textures/item/conjuring_iron.png"
 hash = "3a60326c1857a4bb874fcc181bd91b122586b3d4aa9cbd04ed7512609a6f65de"
 
 [[files]]
-file = "kubejs/assets/runic_crystals/textures/item/conjuring_netherite.png"
+file = "kubejs/assets/runic_shards/textures/item/conjuring_netherite.png"
 hash = "bd135e439d3773e7f60b6f78ec495a4089a54c12aae1002014ed6c083b2310c7"
 
 [[files]]
-file = "kubejs/assets/runic_crystals/textures/item/transport_gold.png"
+file = "kubejs/assets/runic_shards/textures/item/transport_gold.png"
 hash = "6e65730c0269ebc75854924de29aa75f4625660782dcd15dd327a62d5963a9b1"
 
 [[files]]
-file = "kubejs/assets/runic_crystals/textures/item/transport_inert.png"
+file = "kubejs/assets/runic_shards/textures/item/transport_inert.png"
 hash = "c04020103e7947f0957e23c33b8736df748a3158b436ee27ddd8f6d891d10bcb"
 
 [[files]]
-file = "kubejs/assets/runic_crystals/textures/item/transport_iron.png"
+file = "kubejs/assets/runic_shards/textures/item/transport_iron.png"
 hash = "4e60c8a513a6a118e0559354aa87d509d85f9067691f6c16f5de283b03c1a383"
 
 [[files]]
-file = "kubejs/assets/runic_crystals/textures/item/transport_netherite.png"
+file = "kubejs/assets/runic_shards/textures/item/transport_netherite.png"
 hash = "aa77f415cf442c52404a12bf771ecf3491e2577036088570c9305227cde51931"
 
 [[files]]
-file = "kubejs/assets/runic_crystals/textures/item/utility_gold.png"
+file = "kubejs/assets/runic_shards/textures/item/utility_gold.png"
 hash = "cee1bec6c6130c074981aeb07e29d73a577fc79bbba7bc28e5381a87e54b364e"
 
 [[files]]
-file = "kubejs/assets/runic_crystals/textures/item/utility_inert.png"
+file = "kubejs/assets/runic_shards/textures/item/utility_inert.png"
 hash = "0ca0805e2db3b35582442eff16eeacb0898c29a6e0a22d0b0a7dbfb55b94e875"
 
 [[files]]
-file = "kubejs/assets/runic_crystals/textures/item/utility_iron.png"
+file = "kubejs/assets/runic_shards/textures/item/utility_iron.png"
 hash = "511cd22515b1d000936800e6209b338af6b44fe52e20136bafa2f4302c628d44"
 
 [[files]]
-file = "kubejs/assets/runic_crystals/textures/item/utility_netherite.png"
+file = "kubejs/assets/runic_shards/textures/item/utility_netherite.png"
 hash = "0cdf23d1ab7cc4e5f9fbe51e232b76009527a0a693ec4a3da4a4082df23dc20e"
 
 [[files]]
