@@ -60,33 +60,33 @@ StartupEvents.registry('item', e => {
     .glow(false)
     .tooltip("An inert runic shard, formatted for utility spells.");
 
-    e.create('basic_transport_shard')
-    .displayName("Basic Transport Shard")
-    .texture('runic_shards:item/transport_iron')
-    .unstackable()
-    .rarity("uncommon")
-    .glow(true)
-    .maxDamage(4)
-    .barColor(_itemstack => Color.LIGHT_PURPLE)
-    .barWidth(_itemstack => 13)
-    .tooltip("A runic shard, formatted for transport spells.")
-    .use((_level, player, _hand) => {
+    const useTransport = (_level, player, _hand) => {
       var itemstack = player.mainHandItem;
       var nbt = itemstack.getNbt();
       var spell = nbt.getCompound("Spell");
+
       player.tell(spell);
       itemstack.damageValue++;
-      itemstack.barWidth(_itemstack => {
-        var newDamage = 13 - Math.ceil(3.25*itemstack.damageValue);
-        return newDamage;
-      })
       player.addItemCooldown(player.mainHandItem, 20);
+      
       if (itemstack.damageValue >= itemstack.maxDamage) {
-        itemstack.shrink(1);
+        itemstack.count = itemstack.count - 1;
       }
       return true;
-    })
-  })
+    }
+
+    e.create('basic_transport_shard')
+      .displayName("Basic Transport Shard")
+      .texture('runic_shards:item/transport_iron')
+      .unstackable()
+      .rarity("uncommon")
+      .glow(true)
+      .maxDamage(4)
+      .barColor(_itemstack => Color.LIGHT_PURPLE)
+      .barWidth(_itemstack => 13 - Math.ceil(3.25 * _itemstack.damageValue)) 
+      .tooltip("A runic shard, formatted for transport spells.")
+      .use(useTransport);
+})
 
 
   
