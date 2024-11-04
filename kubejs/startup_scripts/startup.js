@@ -72,12 +72,11 @@ StartupEvents.registry('item', e => {
       var spell = nbt.getCompound("Spell");
 
       player.tell(spell);
-      itemstack.damageValue++;
       player.addItemCooldown(player.mainHandItem, 20);
       
-      if (itemstack.damageValue >= itemstack.maxDamage) {
-        itemstack.count = itemstack.count - 1;
-      }
+      itemstack.setDamageValue(itemstack.getDamageValue() + 1);
+      if (itemstack.getDamageValue() < itemstack.getMaxDamage())
+        return itemstack;
       return true;
     }
 
