@@ -61,21 +61,22 @@ StartupEvents.registry('item', e => {
     .tooltip("An inert runic shard, formatted for utility spells.");
 
 /** * 
-    * @param {Internal.LivingEntity} entity
+    * @param {Internal.LivingEntity} player
     * @param {Internal.MinecraftServer} server
+    * @param {Internal.ItemStack} itemstack
     * @param {Internal.Level} level
     */
 
-    const useTransport = (_itemstack, entity, _level) => {
-      var itemstack = entity.getMainHandItem();
+    const useTransport = (_itemstack, player, _level) => {
+      var itemstack = player.getMainHandItem();
       var nbt = itemstack.getNbt();
       var spell = nbt.getString("Spell");
       player.runCommandSilent("kubejs custom_command " +spell);
 
-      entity.tell(spell);
-      entity.tell(itemstack.getDamageValue());
-      entity.tell(itemstack.getMaxDamage());
-      entity.addItemCooldown(entity.mainHandItem, 20);
+      player.tell(spell);
+      player.tell(itemstack.getDamageValue());
+      player.tell(itemstack.getMaxDamage());
+      player.addItemCooldown(player.mainHandItem, 20);
       itemstack.hurtAndBreak(1, player, (p) => { p.broadcastBreakEvent("MAIN_HAND") });
       return true;
     }
