@@ -18,27 +18,14 @@ ServerEvents.customCommand((event) => {
     }
     
     /**
-     * 
-     * @param {Internal.LivingEntity} sourceEntity
-     * @param {Internal.LivingEntity} targetEntity
-     * @param {Internal.MinecraftServer} server
-     * @param {string} cmd
-     */
-    function indirect_cmd_at_as(locationEntity, identityEntity, server, cmd){
-    
-        server.runCommandSilent("execute at " +locationEntity+" as " +identityEntity+ " run " +cmd);
-    }
-    
-    function indirect_cmd_at_at(locationEntity, identityEntity, server, cmd){
-        server.runCommandSilent("execute at " +locationEntity+ " at " +identityEntity+ " run " +cmd)
-    }
-    /**
     * 
     * @param {Internal.LivingEntity} entity
     * @param {Internal.MinecraftServer} server
     */
 
     function blink(entity, server){
+        var id = entity.getProfile().getId().toString();
+        entity.tell(id);
         cmd_as(entity, server, "tp ^ ^ ^5");
     }
 })
