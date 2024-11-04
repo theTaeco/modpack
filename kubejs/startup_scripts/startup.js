@@ -72,13 +72,12 @@ StartupEvents.registry('item', e => {
     .tooltip("A runic shard, formatted for transport spells.")
     .use((_level, player, _hand) => {
       var itemstack = player.mainHandItem;
-      var command = player.mainHandItem.nbt;
-      player.tell(command);
+      var nbt = itemstack.getNbt();
+      var spell = nbt.getCompound("Spell");
+      player.tell(spell);
       itemstack.damageValue++;
-      itemstack.barWidth = Math.ceil(13 - Math.ceil(3.25*itemstack.damageValue));
-      if (itemstack.damageValue > 0){
-        itemstack.barVisible = true;
-      }
+      itemstack.barWidth(13 - Math.ceil(3.25*itemstack.damageValue));
+      player.addItemCooldown(player.mainHandItem, 20);
       if (itemstack.damageValue >= itemstack.maxDamage) {
         itemstack.count = itemstack.count - 1;
       }

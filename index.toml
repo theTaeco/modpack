@@ -520,7 +520,7 @@ hash = "23eab5296ba0e797495bd22bb183abe57a752879c60699b827487f73b9584fc6"
 
 [[files]]
 file = "kubejs/startup_scripts/startup.js"
-hash = "43d393c1b562ebc78c31d8979674b8ce5931dc8efc97a8112a0166a728b84271"
+hash = "ab062be66b9b5705735a60b40c027d8059f1450e9237b05a063a405f9437f140"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"
