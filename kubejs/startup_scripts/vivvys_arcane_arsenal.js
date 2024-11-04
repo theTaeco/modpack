@@ -61,27 +61,27 @@ StartupEvents.registry('item', e => {
     .tooltip("An inert runic shard, formatted for utility spells.");
 
 /** * 
-    * @param {Internal.LivingEntity} player
+    * @param {Internal.LivingEntity} entity
     * @param {Internal.MinecraftServer} server
     * @param {Internal.Level} level
     */
 
-    const useTransport = (_level, player, _hand) => {
-      var itemstack = player.getMainHandItem();
+    const useTransport = (_level, entity, _hand) => {
+      var itemstack = entity.getMainHandItem();
       var nbt = itemstack.getNbt();
       var spell = nbt.getString("Spell");
       player.runCommandSilent("kubejs custom_command " +spell);
 
-      player.tell(spell);
-      player.tell(itemstack.getDamageValue());
-      player.tell(itemstack.getMaxDamage());
+      entity.tell(spell);
+      entity.tell(itemstack.getDamageValue());
+      entity.tell(itemstack.getMaxDamage());
 
       itemstack.setDamageValue(itemstack.getDamageValue() + 1);
       if (itemstack.getDamageValue() >= itemstack.getMaxDamage()) {
         itemstack.shrink(1);
         return true;
       } else {
-        player.addItemCooldown(player.mainHandItem, 20);
+        entity.addItemCooldown(entity.mainHandItem, 20);
         return true;
       }
       
@@ -102,7 +102,7 @@ StartupEvents.registry('item', e => {
         player.playSound("item.lodestone_compass.lock", 5, 1);
         return true;
       })
-      .releaseUsing(useTransport);
+      .releaseUsing(useTransport(_level, player, _hand));
 })
 
 
