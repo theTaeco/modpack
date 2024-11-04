@@ -512,7 +512,7 @@ hash = "e1ee40f4943d7e869fff0c447f069641827f5cb631d2db73e8d8ef0bdd849e4d"
 
 [[files]]
 file = "kubejs/server_scripts/relics.js"
-hash = "2945952da2e185c71e1d0f39e9a69f72367d69bde848089ed89e82f91d7bc219"
+hash = "56ede4cb8e2ed3a88d57ea21655c4caa9ffe5e800ce74de6e7c654f3d4f5680b"
 
 [[files]]
 file = "kubejs/server_scripts/tags.js"
