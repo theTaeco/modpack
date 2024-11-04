@@ -72,13 +72,13 @@ StartupEvents.registry('item', e => {
       var nbt = itemstack.getNbt();
       var spell = nbt.getString("Spell");
       if (nbt.getString("Spell") == ""){
-        nbt.putString("Spell");
+        nbt.putString("Spell", "");
         player.tell("Shard initialized! Please visit a runesmith to encode it.");
         return true;
       } else {
         player.runCommandSilent("kubejs custom_command " +spell);
         player.addItemCooldown(player.mainHandItem, 20);
-        itemstack.hurtAndBreak(1, player, () => {});
+        itemstack.hurtAndBreak(1, player, () => {return true});
         return true;
       }
     }
@@ -89,6 +89,7 @@ StartupEvents.registry('item', e => {
       .unstackable()
       .glow(true)
       .maxDamage(4)
+      .useAnimation('bow')
       .barColor(_itemstack => Color.LIGHT_PURPLE)
       .barWidth(_itemstack => 13 - Math.ceil(3.25 * _itemstack.damageValue))
       .tooltip("A runic shard, formatted for transport spells.")
@@ -98,6 +99,7 @@ StartupEvents.registry('item', e => {
         return true;
       })
       .releaseUsing((_itemstack, _level, player, _tick) => {
+        player.playSound("block.amethyst_cluster.break");
         useTransport(_itemstack, player, _level);
       });
 })
