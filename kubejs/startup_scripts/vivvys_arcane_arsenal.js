@@ -66,21 +66,25 @@ StartupEvents.registry('item', e => {
     * @param {Internal.Level} level
     */
 
-    const useSpell = (_level, player, _hand) => {
+    const useTransport = (_level, player, _hand) => {
       var itemstack = player.mainHandItem;
       var nbt = itemstack.getNbt();
       var spell = nbt.getString("Spell");
       player.runCommandSilent("kubejs custom_command " +spell);
+
       player.tell(spell);
       player.tell(itemstack.getDamageValue());
       player.tell(itemstack.getMaxDamage());
-      player.addItemCooldown(player.mainHandItem, 20);
-      
+
       itemstack.setDamageValue(itemstack.getDamageValue() + 1);
       if (itemstack.getDamageValue() >= itemstack.getMaxDamage()) {
-        itemstack.count = itemstack.count - 1;
+        itemstack.shrink(1);
+        return true;
+      } else {
+        player.addItemCooldown(player.mainHandItem, 20);
+        return true;
       }
-      return true;
+      
     }
 
     e.create('basic_transport_shard')
@@ -93,12 +97,12 @@ StartupEvents.registry('item', e => {
       .barColor(_itemstack => Color.LIGHT_PURPLE)
       .barWidth(_itemstack => 13 - Math.ceil(3.25 * _itemstack.damageValue))
       .tooltip("A runic shard, formatted for transport spells.")
-      .useDuration(72000)
+      .useDuration(_itemstack => 72000)
       .use((_level, player, _hand) => {
         player.playSound("item.lodestone_compass.lock", 5, 1);
         return true;
       })
-      .releaseUsing(useSpell);
+      .releaseUsing(useTransport);
 })
 
 

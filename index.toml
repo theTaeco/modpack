@@ -519,8 +519,8 @@ file = "kubejs/server_scripts/tags.js"
 hash = "23eab5296ba0e797495bd22bb183abe57a752879c60699b827487f73b9584fc6"
 
 [[files]]
-file = "kubejs/startup_scripts/startup.js"
-hash = "73af3d185cdfb3ed678efd864f889abe5bf2d0e977398c4f91ef9c4f93d23dc2"
+file = "kubejs/startup_scripts/vivvys_arcane_arsenal.js"
+hash = "fe90cc60e7ff11b0b8ae05c15011f5111b08efe861b3d7e7cc19471ad21aa0be"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"
