@@ -66,7 +66,7 @@ StartupEvents.registry('item', e => {
     * @param {Internal.Level} level
     */
 
-    const useTransport = (_level, player, _hand) => {
+    const useSpell = (_level, player, _hand) => {
       var itemstack = player.mainHandItem;
       var nbt = itemstack.getNbt();
       var spell = nbt.getString("Spell");
@@ -77,7 +77,7 @@ StartupEvents.registry('item', e => {
       player.addItemCooldown(player.mainHandItem, 20);
       
       itemstack.setDamageValue(itemstack.getDamageValue() + 1);
-      if (itemstack.damageValue >= itemstack.maxDamage) {
+      if (itemstack.getDamageValue() >= itemstack.getMaxDamage()) {
         itemstack.count = itemstack.count - 1;
       }
       return true;
@@ -91,9 +91,14 @@ StartupEvents.registry('item', e => {
       .glow(true)
       .maxDamage(4)
       .barColor(_itemstack => Color.LIGHT_PURPLE)
-      .barWidth(_itemstack => 13 - Math.ceil(3.25 * _itemstack.damageValue)) 
+      .barWidth(_itemstack => 13 - Math.ceil(3.25 * _itemstack.damageValue))
       .tooltip("A runic shard, formatted for transport spells.")
-      .use(useTransport);
+      .useDuration(72000)
+      .use((_level, player, _hand) => {
+        player.playSound("item.lodestone_compass.lock", 5, 1);
+        return true;
+      })
+      .releaseUsing(useSpell);
 })
 
 

@@ -2,7 +2,7 @@ ServerEvents.customCommand((event) => {
     var id = event.getId();
 
     if (id = "blink"){
-        blink(entity, server);
+        blink(event.getEntity(), event.getEntity().server);
     }
     /**
      * 
@@ -39,6 +39,6 @@ ServerEvents.customCommand((event) => {
     */
 
     function blink(entity, server){
-        cmd_as(entity, server, "tp ^1 ^ ^");
+        cmd_as(entity, server, "tp ^ ^ ^5");
     }
 })
