@@ -69,13 +69,14 @@ StartupEvents.registry('item', e => {
     const useTransport = (_level, player, _hand) => {
       var itemstack = player.mainHandItem;
       var nbt = itemstack.getNbt();
-      var spell = nbt.getCompound("Spell");
-
+      var spell = nbt.getString("Spell");
       player.tell(spell);
+      player.tell(itemstack.getDamageValue());
+      player.tell(itemstack.getMaxDamage());
       player.addItemCooldown(player.mainHandItem, 20);
       
       itemstack.setDamageValue(itemstack.getDamageValue() + 1);
-      if (itemstack.getDamageValue() < itemstack.getMaxDamage())
+      if (itemstack.getDamageValue() <= itemstack.getMaxDamage())
         return itemstack;
       return true;
     }
