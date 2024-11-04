@@ -75,16 +75,9 @@ StartupEvents.registry('item', e => {
       entity.tell(spell);
       entity.tell(itemstack.getDamageValue());
       entity.tell(itemstack.getMaxDamage());
-
-      itemstack.setDamageValue(itemstack.getDamageValue() + 1);
-      if (itemstack.getDamageValue() >= itemstack.getMaxDamage()) {
-        itemstack.shrink(1);
-        return true;
-      } else {
-        entity.addItemCooldown(entity.mainHandItem, 20);
-        return true;
-      }
-      
+      entity.addItemCooldown(entity.mainHandItem, 20);
+      itemstack.hurtAndBreak(1, player, (p) => { p.broadcastBreakEvent("MAIN_HAND") });
+      return true;
     }
 
     e.create('basic_transport_shard')
@@ -101,7 +94,7 @@ StartupEvents.registry('item', e => {
         player.playSound("item.lodestone_compass.lock", 5, 1);
         return true;
       })
-      .releaseUsing((itemstack, _level, player, tick) => {
+      .releaseUsing((_itemstack, _level, player, _tick) => {
         useTransport(_itemstack, player, _level);
       });
 })
