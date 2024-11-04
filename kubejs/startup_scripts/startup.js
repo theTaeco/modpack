@@ -60,6 +60,12 @@ StartupEvents.registry('item', e => {
     .glow(false)
     .tooltip("An inert runic shard, formatted for utility spells.");
 
+/** * 
+    * @param {Internal.LivingEntity} player
+    * @param {Internal.MinecraftServer} server
+    * @param {Internal.Level} level
+    */
+
     const useTransport = (_level, player, _hand) => {
       var itemstack = player.mainHandItem;
       var nbt = itemstack.getNbt();
@@ -70,7 +76,7 @@ StartupEvents.registry('item', e => {
       player.addItemCooldown(player.mainHandItem, 20);
       
       if (itemstack.damageValue >= itemstack.maxDamage) {
-        itemstack.count = itemstack.count - 1;
+        itemstack.shrink();
       }
       return true;
     }
