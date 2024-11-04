@@ -76,16 +76,16 @@ StartupEvents.registry('item', e => {
       var spell = nbt.getCompound("Spell");
       player.tell(spell);
       itemstack.damageValue++;
-      itemstack.barWidth() = 13 - Math.ceil(3.25*itemstack.damageValue);
+      itemstack.barWidth(_itemstack => {
+        var newDamage = 13 - Math.ceil(3.25*itemstack.damageValue);
+        return newDamage;
+      })
       player.addItemCooldown(player.mainHandItem, 20);
       if (itemstack.damageValue >= itemstack.maxDamage) {
-        itemstack.count = itemstack.count - 1;
+        itemstack.shrink(1);
       }
       return true;
     })
-
-    e.create('antenna').displayName('Antenna').texture('phonos:item/antenna');
-    e.create('satellite_dish').displayName('Satellite Dish').texture('phonos:item/dish_antenna');
   })
 
 
