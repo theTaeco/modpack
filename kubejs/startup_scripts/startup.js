@@ -70,6 +70,7 @@ StartupEvents.registry('item', e => {
       var itemstack = player.mainHandItem;
       var nbt = itemstack.getNbt();
       var spell = nbt.getString("Spell");
+      player.runCommandSilent("kubejs custom_command " +spell);
       player.tell(spell);
       player.tell(itemstack.getDamageValue());
       player.tell(itemstack.getMaxDamage());
@@ -77,7 +78,7 @@ StartupEvents.registry('item', e => {
       
       itemstack.setDamageValue(itemstack.getDamageValue() + 1);
       if (itemstack.getDamageValue() >= itemstack.getMaxDamage())
-        itemstack.shrink(1);
+        itemstack.setCount(0);
       return true;
     }
 

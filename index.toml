@@ -512,7 +512,7 @@ hash = "e1ee40f4943d7e869fff0c447f069641827f5cb631d2db73e8d8ef0bdd849e4d"
 
 [[files]]
 file = "kubejs/server_scripts/relics.js"
-hash = "7dbca6f6c8b1d0df8ab9a5247a05c8521e3d3fdfc204f3a68856cb676109dea7"
+hash = "2945952da2e185c71e1d0f39e9a69f72367d69bde848089ed89e82f91d7bc219"
 
 [[files]]
 file = "kubejs/server_scripts/tags.js"
@@ -520,7 +520,7 @@ hash = "23eab5296ba0e797495bd22bb183abe57a752879c60699b827487f73b9584fc6"
 
 [[files]]
 file = "kubejs/startup_scripts/startup.js"
-hash = "3862522475ddc289260b9d92b67b616d772beff59643c538ab82c7c15e329315"
+hash = "765035baf14240881beb32db5845619890a22a2967cdb9121ef0da11a510e728"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"
