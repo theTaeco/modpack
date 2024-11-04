@@ -77,7 +77,7 @@ StartupEvents.registry('item', e => {
         return true;
       } else {
         player.runCommandSilent("kubejs custom_command " +spell);
-        player.damageHeldItem('main_hand', 1);
+        player.damageHeldItem();
         player.addItemCooldown(player.mainHandItem, 20);
         return true;
       }
