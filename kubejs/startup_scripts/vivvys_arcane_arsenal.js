@@ -67,7 +67,7 @@ StartupEvents.registry('item', e => {
     */
 
     const useTransport = (_level, player, _hand) => {
-      var itemstack = player.mainHandItem;
+      var itemstack = player.getMainHandItem();
       var nbt = itemstack.getNbt();
       var spell = nbt.getString("Spell");
       player.runCommandSilent("kubejs custom_command " +spell);

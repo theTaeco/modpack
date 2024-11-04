@@ -367,6 +367,10 @@ file = "kubejs/assets/relics/textures/model/voidgazer_spyglass_model.png"
 hash = "bd24fa7297357125e80095e3e0b5093a1512599db197cc542745c93230425cfe"
 
 [[files]]
+file = "kubejs/assets/runic_shards/textures/item/admin_shard.png"
+hash = "6903235b125ac6e495ae6b8489a21fa88e0562de5f974ab16c80829846c8d85f"
+
+[[files]]
 file = "kubejs/assets/runic_shards/textures/item/combat_gold.png"
 hash = "01e728290bda410e6ead6b6d8ec8aedb7ade02b81ccd5e8130e48e557da4c4bc"
 
@@ -520,7 +524,7 @@ hash = "23eab5296ba0e797495bd22bb183abe57a752879c60699b827487f73b9584fc6"
 
 [[files]]
 file = "kubejs/startup_scripts/vivvys_arcane_arsenal.js"
-hash = "fe90cc60e7ff11b0b8ae05c15011f5111b08efe861b3d7e7cc19471ad21aa0be"
+hash = "64bc9e6a08a1665b8597189fdf5ce8da040049c27aba098d3af08c2ae0afd791"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"
