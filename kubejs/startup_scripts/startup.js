@@ -76,7 +76,7 @@ StartupEvents.registry('item', e => {
       var spell = nbt.getCompound("Spell");
       player.tell(spell);
       itemstack.damageValue++;
-      itemstack.barWidth(13 - Math.ceil(3.25*itemstack.damageValue));
+      itemstack.barWidth() = 13 - Math.ceil(3.25*itemstack.damageValue);
       player.addItemCooldown(player.mainHandItem, 20);
       if (itemstack.damageValue >= itemstack.maxDamage) {
         itemstack.count = itemstack.count - 1;
