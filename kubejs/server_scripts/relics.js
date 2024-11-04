@@ -26,6 +26,6 @@ ServerEvents.customCommand((event) => {
     function blink(entity, server){
         var id = entity.getProfile().getId().toString();
         entity.tell(id);
-        cmd_as(entity, server, "tp ^ ^ ^5");
+        entity.runCommandSilent("tp ^ ^ ^5");
     }
 })

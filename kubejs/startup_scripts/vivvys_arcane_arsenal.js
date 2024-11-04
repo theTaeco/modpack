@@ -71,14 +71,16 @@ StartupEvents.registry('item', e => {
       var itemstack = player.getMainHandItem();
       var nbt = itemstack.getNbt();
       var spell = nbt.getString("Spell");
-      player.runCommandSilent("kubejs custom_command " +spell);
-
-      player.tell(spell);
-      player.tell(itemstack.getDamageValue());
-      player.tell(itemstack.getMaxDamage());
-      player.addItemCooldown(player.mainHandItem, 20);
-      itemstack.hurtAndBreak(1, player, (p) => { p.broadcastBreakEvent("MAIN_HAND") });
-      return true;
+      if (nbt.getString("Spell") == ""){
+        nbt.putString("Spell");
+        player.tell("Shard initialized! Please visit a runesmith to encode it.");
+        return true;
+      } else {
+        player.runCommandSilent("kubejs custom_command " +spell);
+        player.addItemCooldown(player.mainHandItem, 20);
+        itemstack.hurtAndBreak(1, player, () => {});
+        return true;
+      }
     }
 
     e.create('basic_transport_shard')
