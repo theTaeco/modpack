@@ -66,7 +66,7 @@ StartupEvents.registry('item', e => {
     * @param {Internal.Level} level
     */
 
-    const useTransport = (_level, entity, _hand) => {
+    const useTransport = (_itemstack, entity, _level) => {
       var itemstack = entity.getMainHandItem();
       var nbt = itemstack.getNbt();
       var spell = nbt.getString("Spell");
@@ -88,10 +88,9 @@ StartupEvents.registry('item', e => {
     }
 
     e.create('basic_transport_shard')
-      .displayName("Basic Transport Shard")
+      .formattedDisplayName(Component.string("Basic Transport Shard").lightPurple())
       .texture('runic_shards:item/transport_iron')
       .unstackable()
-      .rarity("uncommon")
       .glow(true)
       .maxDamage(4)
       .barColor(_itemstack => Color.LIGHT_PURPLE)
@@ -102,7 +101,9 @@ StartupEvents.registry('item', e => {
         player.playSound("item.lodestone_compass.lock", 5, 1);
         return true;
       })
-      .releaseUsing(useTransport(_level, player, _hand));
+      .releaseUsing((itemstack, _level, player, tick) => {
+        useTransport(_itemstack, player, _level);
+      });
 })
 
 
