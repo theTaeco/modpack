@@ -77,8 +77,9 @@ StartupEvents.registry('item', e => {
       player.addItemCooldown(player.mainHandItem, 20);
       
       itemstack.setDamageValue(itemstack.getDamageValue() + 1);
-      if (itemstack.getDamageValue() >= itemstack.getMaxDamage())
-        itemstack.setCount(0);
+      if (itemstack.damageValue >= itemstack.maxDamage) {
+        itemstack.count = itemstack.count - 1;
+      }
       return true;
     }
 

@@ -4,7 +4,12 @@ ServerEvents.customCommand((event) => {
     if (id = "blink"){
         blink(entity, server);
     }
-
+    /**
+     * 
+    * @param {Internal.LivingEntity} entity
+    * @param {Internal.MinecraftServer} server
+    * @param {string} cmd
+    */
 
     function cmd_as(entity, server, cmd) {
         var id = entity.getProfile().getId().toString();
