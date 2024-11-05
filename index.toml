@@ -907,11 +907,6 @@ hash = "5eddd4c6a5cba7cd4d3d9a0acd0e810ae040d92b6c1928984a9497a5187d143b"
 metafile = true
 
 [[files]]
-file = "mods/doggo-mod-overhauled.pw.toml"
-hash = "af7f8767a492330e81bd229d0a2da3d880b89276ece8407c4ea4cb1ddfd66e5d"
-metafile = true
-
-[[files]]
 file = "mods/ducky-periphs.pw.toml"
 hash = "ad0b1c92bf3db21f58b6c609e2da6cd303afedda9973000456e7e3886f906e89"
 metafile = true
