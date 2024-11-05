@@ -338,6 +338,10 @@ file = "config/yosbr/options.txt"
 hash = "72333902e61b680eeca1f42e4dde22138777ae1743d6f183c4594e4336c56f74"
 
 [[files]]
+file = "kubejs/.vscode/settings.json"
+hash = "afb76563b06f66bd43192519a59f355d17a0b6e2f7a52a1dff08940d5237f4d6"
+
+[[files]]
 file = "kubejs/assets/phonos/textures/item/antenna.png"
 hash = "958be02577e9def636498145d5078d5340c482590137172f3985a11149aebe2f"
 
@@ -519,7 +523,7 @@ hash = "a43bc99c4e74bf923311d6be0c3bb02e26eb997e6fb279854b0224b6c261d336"
 
 [[files]]
 file = "kubejs/startup_scripts/vivvys_arcane_arsenal.js"
-hash = "116bb8849814744c0bedceb92532967b24726fdb9878dc22ff7c09baa013599c"
+hash = "041c8f2fe51d0140098d9b936cca824f3037d5e04b4df49ed55fa41019d80cb1"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"
@@ -899,11 +903,6 @@ metafile = true
 [[files]]
 file = "mods/do-a-barrel-roll.pw.toml"
 hash = "5eddd4c6a5cba7cd4d3d9a0acd0e810ae040d92b6c1928984a9497a5187d143b"
-metafile = true
-
-[[files]]
-file = "mods/doggo-mod-overhauled.pw.toml"
-hash = "af7f8767a492330e81bd229d0a2da3d880b89276ece8407c4ea4cb1ddfd66e5d"
 metafile = true
 
 [[files]]

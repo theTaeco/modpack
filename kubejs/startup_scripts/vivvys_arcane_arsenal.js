@@ -206,7 +206,7 @@ StartupEvents.registry('item', e => {
     });
 
     e.create('utility_shard_netherite')
-    .formattedDisplayName(Component.string("Netherite Utility Shard").blue())
+    .formattedDisplayName(Component.string("Reinforced Utility Shard").blue())
     .texture('runic_shards:item/utility_netherite')
     .unstackable()
     .glow(true)
@@ -278,7 +278,7 @@ StartupEvents.registry('item', e => {
     });
 
     e.create('combat_shard_netherite')
-    .formattedDisplayName(Component.string("Netherite Combat Shard").red())
+    .formattedDisplayName(Component.string("Reinforced Combat Shard").red())
     .texture('runic_shards:item/combat_netherite')
     .unstackable()
     .glow(true)
@@ -350,7 +350,7 @@ StartupEvents.registry('item', e => {
     });
 
     e.create('conjuring_shard_netherite')
-    .formattedDisplayName(Component.string("Netherite Conjuring Shard").green())
+    .formattedDisplayName(Component.string("Reinforced Conjuring Shard").green())
     .texture('runic_shards:item/conjuring_netherite')
     .unstackable()
     .glow(true)
