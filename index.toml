@@ -185,11 +185,6 @@ file = "config/paxi/resourcepacks/RailwaysTweaks/pack.mcmeta"
 hash = "04d90cd6c0c7eda18aee76107ac78f8246388deb4c7a01810af3cd757d67dfd0"
 
 [[files]]
-file = "config/paxi/resourcepacks/ae2-texture-backport.pw.toml"
-hash = "9fd61644e8ed178e67b0d0d6e1c5b7c07d96721166417fb199daa127712d7501"
-metafile = true
-
-[[files]]
 file = "config/paxi/resourcepacks/colorful-nixies.pw.toml"
 hash = "4c0fdefa84f8414640efc4c455e997f06d15cc1c706aa9f7db8504101276f35a"
 metafile = true
