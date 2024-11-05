@@ -70,7 +70,7 @@ hash = "1de5a07a92ed99574f03555597da94db00d30b2f28ead3b1caf9abd86485452b"
 
 [[files]]
 file = "config/item_obliterator.json5"
-hash = "c342e48d8a0b1ccee431f0817ac85369b4c1f4e1028062ef8f7438115f311d53"
+hash = "d1ff672be2cb2c7a384f422ecb3ed044799b421a3433a0743eb4bd550d9693ce"
 
 [[files]]
 file = "config/lmft.json"
@@ -520,6 +520,7 @@ hash = "ac80c570ed02153a3dd69ada29976e61d3ff6759a46b300a2052c38c6eb8501b"
 
 [[files]]
 file = "kubejs/server_scripts/tags.js"
+hash = "5387c6776a8531e27172704d49a71810a4292f415aa93a59b8b93a3df3ad381c"
 hash = "23eab5296ba0e797495bd22bb183abe57a752879c60699b827487f73b9584fc6"
 
 [[files]]
@@ -668,7 +669,7 @@ metafile = true
 
 [[files]]
 file = "mods/bluemap.pw.toml"
-hash = "6c556e9a9c5b3a2c73181f53e62dd5e70dc0e2abc52b88e6a261e1c307460526"
+hash = "f96656076717dcadf38073af32ce253b2cfd0f5ff1785c03450e146f06213ee3"
 metafile = true
 
 [[files]]
@@ -1003,7 +1004,7 @@ metafile = true
 
 [[files]]
 file = "mods/fabric-language-kotlin.pw.toml"
-hash = "4827c2c799732112b14c0edf55062c1f33bef97d7f7d866491bb1d7d4b97e1c8"
+hash = "5edd45af7eccd8a626f72fa148a680dc2640c081bdc73971b17652c92b92780b"
 metafile = true
 
 [[files]]
@@ -1476,7 +1477,7 @@ metafile = true
 
 [[files]]
 file = "mods/plutonium.pw.toml"
-hash = "e03a69fd31d16b47c45757df061cf956e80535b232c5a89900eea0cbc8457614"
+hash = "c58db3d4ccdcea7f29bdc6668313a4e2fb99ec05d3915a7384479342154c58f3"
 metafile = true
 
 [[files]]
@@ -1521,7 +1522,7 @@ metafile = true
 
 [[files]]
 file = "mods/railways-tweaks.pw.toml"
-hash = "83878e2396327f32bdad5bd7a5dd8bc9fe9993bcbe60b19ea74f76b96079bebf"
+hash = "ecdac95acc1eb492271dd759e430fb79f46d4768c7fefb16c05285b9ab82c9b5"
 metafile = true
 
 [[files]]
