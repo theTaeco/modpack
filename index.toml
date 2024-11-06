@@ -455,11 +455,11 @@ hash = "cd5616617d0c1219c54eb85e3d56e3c0efa92fa492b0b2d4980b8b0870d264a9"
 
 [[files]]
 file = "kubejs/data/create/recipes/crafting/curiosities/brown_toolbox.json"
-hash = "43075a3aa1172cd1b1455510645ae9ea8c22c382035c0693158f4f6c17c59857"
+hash = "45d26a6d873bea2dbb9b693865225b218050b3cd61e11a3118c53c6814ed6e3c"
 
 [[files]]
 file = "kubejs/data/minecraft/recipes/shulker_box.json"
-hash = "d6186f7fc0bb6988ca796a60b79165b2c463a94cc1d931969892b1690c95ef71"
+hash = "ddec276786d2a9082eb9376604cccb1fce7694d9d15ce4e6bacf95ccf1c650da"
 
 [[files]]
 file = "kubejs/server_scripts/compostables.js"
@@ -706,11 +706,6 @@ hash = "095a93b4f0b4e2b8fadf8359bc145cbdd83be3c5bf23432e9a5f4e54d60de5b4"
 metafile = true
 
 [[files]]
-file = "mods/carry-on.pw.toml"
-hash = "94fbe9655850d99ed2a950e6b59c9cbfabfc21d859c7920c4a8b21101f5981b7"
-metafile = true
-
-[[files]]
 file = "mods/cc-tweaked.pw.toml"
 hash = "c04484b7186077d8f951c8c0e8ae14dfdc1a32da994a1265f26ec748496853b9"
 metafile = true
@@ -818,11 +813,6 @@ metafile = true
 [[files]]
 file = "mods/create-design-n-decor.pw.toml"
 hash = "6b4e4ced7cb3323842a46fa78fe1e5e8ff2badd6814d09dab5ea9e5ca0f28a7c"
-metafile = true
-
-[[files]]
-file = "mods/create-dynamic-lights.pw.toml"
-hash = "236dcb0e37036f124ecd51369b1ad1fc75235665c061103189da9999dbd1a0d5"
 metafile = true
 
 [[files]]
@@ -1208,11 +1198,6 @@ metafile = true
 [[files]]
 file = "mods/kubejs.pw.toml"
 hash = "08466e36ec0585de1c99f28e5f91566160e06283e5d69ad47c74623f72ce9385"
-metafile = true
-
-[[files]]
-file = "mods/lambdynamiclights.pw.toml"
-hash = "a626674fc1092afe5ccc6cbf4856c09119e42395494f1c3862eed2ab17da0221"
 metafile = true
 
 [[files]]
