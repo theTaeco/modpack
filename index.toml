@@ -21,6 +21,10 @@ file = "config/bclib/server.json"
 hash = "83a74f8fc0756a952758f5be0667ff5437dd99e832835b2a70d6a4ac1a9669f6"
 
 [[files]]
+file = "config/carryon-common.json"
+hash = "821f3972161fce3a7ab30b5472b1008f72a5009a5cc9380a3c6ef55dcb4ced22"
+
+[[files]]
 file = "config/chunky/config.json"
 hash = "0996ac3222899c604575d941dcddf1432ddd6dbf433b8bc677f97788051b0a47"
 
@@ -703,6 +707,11 @@ metafile = true
 [[files]]
 file = "mods/carpet.pw.toml"
 hash = "095a93b4f0b4e2b8fadf8359bc145cbdd83be3c5bf23432e9a5f4e54d60de5b4"
+metafile = true
+
+[[files]]
+file = "mods/carry-on.pw.toml"
+hash = "5ba003768a235ab0d811218191166f9aefa4c9a2509341fbba1efd80e18d3676"
 metafile = true
 
 [[files]]
