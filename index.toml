@@ -515,7 +515,7 @@ hash = "e1ee40f4943d7e869fff0c447f069641827f5cb631d2db73e8d8ef0bdd849e4d"
 
 [[files]]
 file = "kubejs/server_scripts/relics.js"
-hash = "ac80c570ed02153a3dd69ada29976e61d3ff6759a46b300a2052c38c6eb8501b"
+hash = "73e438e4042dfa6ab37aa0948ac8e62e9989e8325a961b5abebe2be1f4e8fe8a"
 
 [[files]]
 file = "kubejs/server_scripts/tags.js"
@@ -523,7 +523,7 @@ hash = "a43bc99c4e74bf923311d6be0c3bb02e26eb997e6fb279854b0224b6c261d336"
 
 [[files]]
 file = "kubejs/startup_scripts/vivvys_arcane_arsenal.js"
-hash = "041c8f2fe51d0140098d9b936cca824f3037d5e04b4df49ed55fa41019d80cb1"
+hash = "f2aa234f10d093ac1d951cb5d50c07d15ec56e51c6016d206f4bc40d8fc286c6"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"
@@ -958,6 +958,11 @@ metafile = true
 [[files]]
 file = "mods/entity-model-features.pw.toml"
 hash = "2beb95d8ff5770b423a562d408305b92c20b873a1d3b56f059d2837ea61fbbe4"
+metafile = true
+
+[[files]]
+file = "mods/entityjs.pw.toml"
+hash = "93a2ca58a8785dbffd4386ddb2fb9f72bddf30ab510d7b20e9c62442069c3207"
 metafile = true
 
 [[files]]

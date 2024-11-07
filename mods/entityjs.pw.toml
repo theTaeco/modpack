@@ -1,0 +1,13 @@
+name = "EntityJS"
+filename = "entityjs-0.2.5-1.20.1-fabric.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/OvPZ16yX/versions/3ywJ9y2A/entityjs-0.2.5-1.20.1-fabric.jar"
+hash-format = "sha1"
+hash = "f75d3c9d07d5b17acf4945eec7f1415c1ae52aac"
+
+[update]
+[update.modrinth]
+mod-id = "OvPZ16yX"
+version = "3ywJ9y2A"
