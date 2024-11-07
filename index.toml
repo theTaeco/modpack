@@ -374,6 +374,10 @@ file = "kubejs/assets/runic_shards/textures/item/combat_gold.png"
 hash = "01e728290bda410e6ead6b6d8ec8aedb7ade02b81ccd5e8130e48e557da4c4bc"
 
 [[files]]
+file = "kubejs/assets/runic_shards/textures/item/combat_incomplete.png"
+hash = "8bc0d14750806cfbd51bdb9898335af082637ce997efbfc711a40a807fc5ebaa"
+
+[[files]]
 file = "kubejs/assets/runic_shards/textures/item/combat_inert.png"
 hash = "63d83b15145f566b2d356afdf635c56c436af8096eaaaf3385fc40a0dc6f3380"
 
@@ -388,6 +392,10 @@ hash = "26ee51e76bf3fdb7cc211a0a3981eb916dfbad9a0cacd63bc580d662c2315800"
 [[files]]
 file = "kubejs/assets/runic_shards/textures/item/conjuring_gold.png"
 hash = "8d573c4c2b180a4fbcf9dec8e0449f334adeaf2c6cc22ead5061caf6515a25ca"
+
+[[files]]
+file = "kubejs/assets/runic_shards/textures/item/conjuring_incomplete.png"
+hash = "b9b825a5f0187d5510c57193dff64550fb32fe6c9eb5adc375eb123ebbea31e7"
 
 [[files]]
 file = "kubejs/assets/runic_shards/textures/item/conjuring_inert.png"
@@ -406,6 +414,10 @@ file = "kubejs/assets/runic_shards/textures/item/transport_gold.png"
 hash = "6e65730c0269ebc75854924de29aa75f4625660782dcd15dd327a62d5963a9b1"
 
 [[files]]
+file = "kubejs/assets/runic_shards/textures/item/transport_incomplete.png"
+hash = "c31fcbef5b5eaddadae97084df514e03ac19bcc96b867b5837145cb483435dbc"
+
+[[files]]
 file = "kubejs/assets/runic_shards/textures/item/transport_inert.png"
 hash = "c04020103e7947f0957e23c33b8736df748a3158b436ee27ddd8f6d891d10bcb"
 
@@ -420,6 +432,10 @@ hash = "aa77f415cf442c52404a12bf771ecf3491e2577036088570c9305227cde51931"
 [[files]]
 file = "kubejs/assets/runic_shards/textures/item/utility_gold.png"
 hash = "cee1bec6c6130c074981aeb07e29d73a577fc79bbba7bc28e5381a87e54b364e"
+
+[[files]]
+file = "kubejs/assets/runic_shards/textures/item/utility_incomplete.png"
+hash = "6a01bfbdc6062b3c54fb8bcbbf9a7ca57303525b3308d55508f3dc5eb448735a"
 
 [[files]]
 file = "kubejs/assets/runic_shards/textures/item/utility_inert.png"
@@ -523,7 +539,7 @@ hash = "a43bc99c4e74bf923311d6be0c3bb02e26eb997e6fb279854b0224b6c261d336"
 
 [[files]]
 file = "kubejs/startup_scripts/vivvys_arcane_arsenal.js"
-hash = "f2aa234f10d093ac1d951cb5d50c07d15ec56e51c6016d206f4bc40d8fc286c6"
+hash = "6eba2c22c5d6f046c7f62c8fbfbdee919d80f7a674ace6bcc88c355437dc7af0"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"
@@ -961,11 +977,6 @@ hash = "2beb95d8ff5770b423a562d408305b92c20b873a1d3b56f059d2837ea61fbbe4"
 metafile = true
 
 [[files]]
-file = "mods/entityjs.pw.toml"
-hash = "93a2ca58a8785dbffd4386ddb2fb9f72bddf30ab510d7b20e9c62442069c3207"
-metafile = true
-
-[[files]]
 file = "mods/entitytexturefeatures.pw.toml"
 hash = "f74bba0bfe9e9fd9288d1afac05670ee574123cd336c4a4313a64fbccf6a62c3"
 metafile = true
@@ -1203,11 +1214,6 @@ metafile = true
 [[files]]
 file = "mods/krypton.pw.toml"
 hash = "067d992d925772f757e82085496010fb5bc1f5b84bd899f4c6be9fa1e638da49"
-metafile = true
-
-[[files]]
-file = "mods/kubejs-additions.pw.toml"
-hash = "6f246a41e80cac4a01951f19f572c038e84b7bcac747b608786a884e68206881"
 metafile = true
 
 [[files]]
